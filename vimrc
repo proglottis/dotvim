@@ -20,3 +20,5 @@ map j gj
 map k gk
 map <down> g<down>
 map <up> g<up>
+
+let g:ctrlp_extensions = ['tag', 'buffertag']
