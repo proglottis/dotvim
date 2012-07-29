@@ -10,6 +10,8 @@ set ruler
 set smarttab
 
 if has("gui_running")
+	set columns=120
+	set guioptions-=T
 	set spell
 endif
 
