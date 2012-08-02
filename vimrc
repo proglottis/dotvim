@@ -9,6 +9,7 @@ set hidden
 set ruler
 set smarttab
 set wildmenu
+set laststatus=2
 
 " searching
 set incsearch
