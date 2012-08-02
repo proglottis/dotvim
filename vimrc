@@ -10,6 +10,7 @@ set ruler
 set smarttab
 set wildmenu
 set laststatus=2
+set autoread
 
 " searching
 set incsearch
