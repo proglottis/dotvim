@@ -10,6 +10,10 @@ set ruler
 set smarttab
 set wildmenu
 
+" searching
+set incsearch
+set hlsearch
+
 if has("gui_running")
 	set columns=120
 	set guioptions-=T
