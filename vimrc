@@ -8,6 +8,7 @@ filetype plugin indent on
 set hidden
 set ruler
 set smarttab
+set wildmenu
 
 if has("gui_running")
 	set columns=120
