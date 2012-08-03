@@ -30,4 +30,11 @@ map k gk
 map <down> g<down>
 map <up> g<up>
 
+" toggle search highlight
+map <space> :set hlsearch! hlsearch?<CR>
+
+" keep visual mode selection when indenting
+vmap > >gv
+vmap < <gv
+
 let g:ctrlp_extensions = ['tag', 'buffertag']
