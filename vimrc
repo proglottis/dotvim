@@ -15,6 +15,8 @@ set autoread
 " searching
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 
 if has("gui_running")
 	set columns=120
