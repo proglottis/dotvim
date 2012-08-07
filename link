@@ -2,10 +2,14 @@
 
 dotvim_dir=$(cd "$(dirname "$0")" && pwd)
 
-rm ~/.gvimrc
-rm ~/.vimrc
-rm ~/.vim
+if [ $dotvim_dir -ef ~/.vim ]; then
+	echo ".vim already symlinked or is the actual dotvim repository"
+else
+	[ -e ~/.vim ] && rm ~/.vim
+	ln -s ${dotvim_dir} ~/.vim
+fi
 
-ln -s ${dotvim_dir} ~/.vim
+[ -e ~/.vimrc ] && rm ~/.vimrc
+[ -e ~/.gvimrc ] && rm ~/.gvimrc
 ln -s .vim/vimrc ~/.vimrc
 ln -s .vim/gvimrc ~/.gvimrc
