@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dotvim_dir=$(cd "$(dirname "$0")" && pwd)
+
+rm ~/.gvimrc
+rm ~/.vimrc
+rm ~/.vim
+
+ln -s ${dotvim_dir} ~/.vim
+ln -s .vim/vimrc ~/.vimrc
+ln -s .vim/gvimrc ~/.gvimrc
