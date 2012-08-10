@@ -12,7 +12,7 @@ set smarttab
 set wildmenu
 set laststatus=2
 set autoread
-set guifont=Menlo\ for\ Powerline
+set guifont=Monico\ for\ Powerline
 
 " searching
 set incsearch

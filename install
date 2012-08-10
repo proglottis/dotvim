@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dotvim_dir=$(cd "$(dirname "$0")" && pwd)
-font_name=Menlo
+font_name=Monaco
 
 if [ $dotvim_dir -ef ~/.vim ]; then
 	echo ".vim already symlinked or is the actual dotvim repository"
@@ -15,7 +15,7 @@ fi
 ln -s .vim/vimrc ~/.vimrc
 ln -s .vim/gvimrc ~/.gvimrc
 
-font_path=$(fc-list ${font_name} | sed "s/:.*//" | head -n 1)
+font_path=$(fc-list ${font_name} file | sed "s/:.*//" | head -n 1)
 font_install_path=~/.fonts/${font_name}-Powerline.otf
 
 if [ -e `which fontforge` ] && [ -e ${font_path} ] && [ ! -e ${font_install_path} ]; then
