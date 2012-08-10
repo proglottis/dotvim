@@ -12,6 +12,7 @@ set smarttab
 set wildmenu
 set laststatus=2
 set autoread
+set guifont=Menlo\ for\ Powerline
 
 " searching
 set incsearch
@@ -33,3 +34,5 @@ vmap > >gv
 vmap < <gv
 
 let g:ctrlp_extensions = ['tag', 'buffertag']
+
+let g:Powerline_symbols = 'fancy'

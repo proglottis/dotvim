@@ -1,0 +1,34 @@
+#!/bin/bash
+
+dotvim_dir=$(cd "$(dirname "$0")" && pwd)
+
+if [ $dotvim_dir -ef ~/.vim ]; then
+	echo ".vim already symlinked or is the actual dotvim repository"
+else
+	[ -e ~/.vim ] && rm ~/.vim
+	ln -s ${dotvim_dir} ~/.vim
+fi
+
+[ -e ~/.vimrc ] && rm ~/.vimrc
+[ -e ~/.gvimrc ] && rm ~/.gvimrc
+ln -s .vim/vimrc ~/.vimrc
+ln -s .vim/gvimrc ~/.gvimrc
+
+font_path=$(fc-list Menlo | sed "s/:.*//" | head -n 1)
+font=$(basename "${font_path}")
+font_install_path=~/.fonts/${font%.*}-Powerline.otf
+
+if [ -e `which fontforge` ] && [ -e ${font_path} ] && [ ! -e ${font_install_path} ]; then
+
+	mkdir -p ~/.fonts
+	cd ~/.fonts
+
+	fontforge -script ~/.vim/bundle/vim-powerline/fontpatcher/fontpatcher "${font_path}"
+
+	echo "Update font cache"
+	sudo fc-cache -vf
+
+	open ${font_install_path}
+
+	[ -e /tmp/Powerline.cache ] && rm /tmp/Powerline.cache
+fi
