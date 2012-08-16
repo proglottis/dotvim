@@ -33,6 +33,6 @@ map <space> :set hlsearch! hlsearch?<CR>
 vmap > >gv
 vmap < <gv
 
-let g:ctrlp_extensions = ['tag', 'buffertag']
+let g:ctrlp_extensions = ['tag']
 
 let g:Powerline_symbols = 'fancy'
