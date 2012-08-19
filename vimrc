@@ -2,8 +2,6 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 syntax on
-
-filetype plugin on
 filetype plugin indent on
 
 set hidden
