@@ -34,3 +34,5 @@ vmap < <gv
 let g:ctrlp_extensions = ['tag']
 
 let g:Powerline_symbols = 'fancy'
+
+let erlang_show_errors = 0
