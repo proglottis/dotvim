@@ -1,3 +1,5 @@
+colorscheme solarized
+
 set columns=120
 set guioptions-=T
 set spell
