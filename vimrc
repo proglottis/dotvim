@@ -32,6 +32,7 @@ map <space> :set hlsearch! hlsearch?<CR>
 vmap > >gv
 vmap < <gv
 
+let g:ctrlp_regexp = 1
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_user_command = {
 			\ 'types': {
