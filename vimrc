@@ -11,6 +11,7 @@ set wildmenu
 set laststatus=2
 set autoread
 set guifont=Monico\ for\ Powerline
+set spell
 
 " searching
 set incsearch
