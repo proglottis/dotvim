@@ -11,3 +11,8 @@ Installation
 5. Install fontforge (`brew install fontforge`, `apt-get install python-fontforge`)
 6. Backup any existing VIM configuration
 7. `./install`
+
+Dependencies
+------------
+
+* The Silver Searcher (https://github.com/ggreer/the_silver_searcher)
