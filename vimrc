@@ -46,3 +46,5 @@ let g:Powerline_symbols = 'fancy'
 let erlang_show_errors = 0
 
 let g:solarized_menu=0
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
