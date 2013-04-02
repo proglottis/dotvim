@@ -12,6 +12,7 @@ set laststatus=2
 set autoread
 set guifont=Monico\ for\ Powerline
 set spell
+set clipboard=unnamed
 
 " searching
 set incsearch
