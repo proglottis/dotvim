@@ -33,6 +33,10 @@ map <space> :set hlsearch! hlsearch?<CR>
 vmap > >gv
 vmap < <gv
 
+" forward and back in buffers
+nmap <tab> :bnext<CR>
+nmap <S-tab> :bprev<CR>
+
 let g:ctrlp_regexp = 1
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_user_command = {
