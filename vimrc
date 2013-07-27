@@ -10,7 +10,7 @@ set smarttab
 set wildmenu
 set laststatus=2
 set autoread
-set guifont=Monico\ for\ Powerline
+set guifont=Menlo\ for\ Powerline
 set spell
 set clipboard=unnamed
 
@@ -37,6 +37,8 @@ vmap < <gv
 nmap <tab> :bnext<CR>
 nmap <S-tab> :bprev<CR>
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 let g:ctrlp_regexp = 1
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_user_command = {
@@ -45,8 +47,6 @@ let g:ctrlp_user_command = {
 			\ 2: ['.hg', 'hg --cwd %s locate -I .'],
 			\ },
 			\ }
-
-let g:Powerline_symbols = 'fancy'
 
 let erlang_show_errors = 0
 

@@ -8,6 +8,5 @@ Installation
 2. `cd dotvim`
 3. `git submodule init`
 4. `git submodule update`
-5. Install fontforge (`brew install fontforge`, `apt-get install python-fontforge`)
-6. Backup any existing VIM configuration
-7. `./install`
+5. Backup any existing VIM configuration
+6. `./install`
