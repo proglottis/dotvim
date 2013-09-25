@@ -37,6 +37,9 @@ vmap < <gv
 nmap <tab> :bnext<CR>
 nmap <S-tab> :bprev<CR>
 
+" always use ZoomWin
+nmap <unique> <c-w><c-o> <Plug>ZoomWin
+
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let g:ctrlp_regexp = 1
