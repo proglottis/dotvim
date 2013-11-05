@@ -73,3 +73,6 @@
 [submodule "bundle/vim-afterimage"]
 	path = bundle/vim-afterimage
 	url = https://github.com/tpope/vim-afterimage.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
