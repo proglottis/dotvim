@@ -10,7 +10,7 @@ set smarttab
 set wildmenu
 set laststatus=2
 set autoread
-set guifont=Menlo\ for\ Powerline
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 set spell
 set clipboard=unnamed
 
