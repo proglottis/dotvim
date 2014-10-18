@@ -11,6 +11,7 @@ if has("gui_macvim")
 	" kill new tab, use ctrlp plugin
 	macmenu &File.New\ Tab key=<nop>
 	map <D-t> <C-p>
+	map <D-p> <C-p>
 
 	" kill print
 	macmenu &File.Print key=<nop>
