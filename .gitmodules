@@ -82,3 +82,6 @@
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
+[submodule "bundle/Dockerfile"]
+	path = bundle/Dockerfile
+	url = git@github.com:ekalinin/Dockerfile.vim.git
