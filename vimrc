@@ -53,4 +53,6 @@ let g:ctrlp_user_command = {
 
 let erlang_show_errors = 0
 
-let g:solarized_menu=0
+let g:solarized_menu = 0
+
+let g:jsx_ext_required = 0
