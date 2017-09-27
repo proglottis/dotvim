@@ -40,16 +40,20 @@ nmap <S-tab> :bprev<CR>
 " always use ZoomWin
 nmap <unique> <c-w><c-o> <Plug>ZoomWin
 
+set path=$PWD/**
+
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+autocmd QuickFixCmdPost *grep* cwindow
+
 let g:ctrlp_regexp = 1
-let g:ctrlp_extensions = ['tag']
 let g:ctrlp_user_command = {
-			\ 'types': {
-			\ 1: ['.git', 'cd %s && git ls-files'],
-			\ 2: ['.hg', 'hg --cwd %s locate -I .'],
-			\ },
-			\ }
+	\ 'types': {
+		\ 1: ['.git', 'cd %s && git ls-files'],
+		\ 2: ['.hg', 'hg --cwd %s locate -I .'],
+		\ },
+	\ 'fallback': 'find %s -type f'
+	\ }
 
 let erlang_show_errors = 0
 
