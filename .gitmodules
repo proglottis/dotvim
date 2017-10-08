@@ -49,9 +49,6 @@
 [submodule "bundle/vim-rdoc"]
 	path = bundle/vim-rdoc
 	url = https://github.com/depuracao/vim-rdoc.git
-[submodule "bundle/rust.vim"]
-	path = bundle/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = git@github.com:Lokaltog/powerline-fonts.git
