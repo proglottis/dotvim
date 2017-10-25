@@ -20,6 +20,10 @@ set hlsearch
 set ignorecase
 set smartcase
 
+if has("mouse")
+	set mouse=a
+endif
+
 " don't jump over text-wrapped lines
 map j gj
 map k gk
