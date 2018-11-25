@@ -21,6 +21,7 @@ set ignorecase
 set smartcase
 
 packadd! matchit
+packadd! editexisting
 
 if has("mouse")
 	set mouse=a
