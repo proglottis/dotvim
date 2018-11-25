@@ -20,6 +20,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
+packadd! matchit
+
 if has("mouse")
 	set mouse=a
 endif
