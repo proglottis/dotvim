@@ -47,6 +47,8 @@ nmap <S-tab> :bprev<CR>
 " always use ZoomWin
 nmap <unique> <c-w><c-o> <Plug>ZoomWin
 
+map <C-n> :NERDTreeToggle<CR>
+
 set path=$PWD/**
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
