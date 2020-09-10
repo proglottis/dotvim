@@ -47,7 +47,7 @@
 	path = powerline-fonts
 	url = git@github.com:Lokaltog/powerline-fonts.git
 [submodule "bundle/powerline"]
-	path = pack/utility/start/powerline
+	path = powerline
 	url = git@github.com:Lokaltog/powerline.git
 [submodule "bundle/vim-afterimage"]
 	path = pack/language/start/vim-afterimage
