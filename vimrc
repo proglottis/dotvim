@@ -52,6 +52,9 @@ map <C-n> :NERDTreeToggle<CR>
 set path=$PWD/**
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=/usr/local/opt/fzf
+
+nnoremap <silent> <C-p> :Files<CR>
 
 autocmd QuickFixCmdPost *grep* cwindow
 
