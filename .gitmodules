@@ -97,3 +97,6 @@
 [submodule "bundle/fzf.vim"]
 	path = pack/utility/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/language/start/vim-nix"]
+	path = pack/language/start/vim-nix
+	url = https://github.com/LnL7/vim-nix.git
