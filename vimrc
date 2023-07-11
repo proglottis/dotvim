@@ -10,6 +10,7 @@ set autoread
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 set spell
 set clipboard=unnamed
+set backspace=indent,eol,start
 
 " searching
 set incsearch
