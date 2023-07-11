@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 dotvim_dir=$(cd "$(dirname "$0")" && pwd)
 
